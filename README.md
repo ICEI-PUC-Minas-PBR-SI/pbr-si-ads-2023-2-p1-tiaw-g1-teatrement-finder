@@ -8,19 +8,24 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Alcance será uma aplicação que visa auxiliar a dificuldade que as famílias e cuidadores enfrentam ao procurar 
+clínicas e organizações que oferecem atendimento para crianças e adultos com Transtorno do Espectro Autista (TEA) 
+e outras comorbidades. Atualmente, essa busca é uma jornada complexa e desafiadora, devido à falta de 
+informações centralizadas e acessíveis. .
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Eduarda da Silva Borges Sales
+* Gabriel Vitor Ramos Ribeiro
+* Kaique Cézar Romano de Almeida 
+* Paulo Arthur Araujo de Andrade
+* Pricilla Lopes Braga
+* Rafael Nicolas Araújo Custódio
+* Raphael Silva Costa
 
 ## Orientador
 
-* Nome completo do professor 1
+* Franciele Cristina Pereiras Rodrigues
 
 # Planejamento
 

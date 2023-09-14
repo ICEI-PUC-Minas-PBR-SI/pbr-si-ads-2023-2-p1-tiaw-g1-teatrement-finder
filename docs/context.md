@@ -29,17 +29,6 @@ Além disso, ao promover a colaboração e o compartilhamento de experiências e
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
-
 Famílias e Cuidadores: Este grupo é formado por pais, irmãos, avós, tios, amigos próximos e outros cuidadores que estão diretamente envolvidos no apoio e cuidado de pessoas com TEA e comorbidades. Eles buscam informações e recursos para melhor compreender e atender às necessidades de seus entes queridos. 
 
 Pessoas com TEA: Dependendo de suas habilidades e necessidades, as pessoas com TEA podem usar a aplicação para encontrar serviços e recursos que sejam relevantes para elas. A acessibilidade e a usabilidade são cruciais para este grupo. 

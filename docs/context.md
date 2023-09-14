@@ -1,13 +1,9 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
-
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+ 
+A plataforma não apenas simplifica a busca por serviços, mas também permite que os usuários compartilhem experiências e avaliações, enriquecendo a comunidade com informações valiosas. Profissionais de saúde e educação também encontram neste site uma fonte confiável para encaminhar pacientes e alunos a serviços especializados. 
+Este site é um exemplo da capacidade da tecnologia de promover o bem social e de atender a necessidades reais da comunidade. Ele não só empodera as famílias e cuidadores, tornando sua jornada mais eficiente e menos estressante, mas também contribui para uma sociedade mais inclusiva e consciente das necessidades das pessoas com TEA e comorbidades. 
+Com uma visão clara e uma equipe dedicada, este site busca ser uma força positiva na vida daqueles que enfrentam desafios relacionados ao TEA e comorbidades, fornecendo uma plataforma que simplifica o acesso a serviços de saúde e apoio, promovendo, assim, uma maior qualidade de vida e bem-estar para todos os envolvidos. 
 
 ## Problema
 

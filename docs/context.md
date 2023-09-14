@@ -23,12 +23,9 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A relevância desse projeto é inquestionável, uma vez que o Transtorno do Espectro Autista e outras comorbidades afetam uma parcela significativa da população. Além disso, a conscientização sobre a importância de um diagnóstico precoce e de intervenções adequadas está em constante crescimento. Este sistema não só proporcionará comodidade e alívio às famílias, mas também contribuirá para a melhoria da qualidade de vida daqueles que enfrentam desafios relacionados ao TEA e comorbidades. Assim, estou comprometida em criar uma solução que faça a diferença e que esteja verdadeiramente alinhada com as necessidades da comunidade. 
+A aplicação proposta desempenhará um papel fundamental na melhoria do acesso e na qualidade do cuidado para pessoas com Transtorno do Espectro Autista (TEA) e comorbidades. Ao centralizar informações precisas e atualizadas sobre clínicas, serviços de saúde, programas de apoio e recursos educacionais, a aplicação irá fornecer uma plataforma de fácil acesso para famílias, cuidadores, profissionais de saúde e educadores. Isso permitirá que eles encontrem serviços especializados de forma mais eficiente e tomem decisões informadas. 
+Além disso, ao promover a colaboração e o compartilhamento de experiências entre os usuários, a aplicação criará uma comunidade de apoio valiosa. Isso não apenas aliviará o isolamento que muitas vezes acompanha o diagnóstico de TEA, mas também permitirá que as famílias e cuidadores compartilhem estratégias bem-sucedidas e aprendam uns com os outros.
 
 ## Público-Alvo
 

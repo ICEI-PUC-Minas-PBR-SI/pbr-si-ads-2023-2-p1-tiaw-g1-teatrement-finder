@@ -15,8 +15,6 @@ informações centralizadas e acessíveis. .
 
 ## Integrantes
 
-* Eduarda da Silva Borges Sales
-* Gabriel Vitor Ramos Ribeiro
 * Kaique Cézar Romano de Almeida 
 * Paulo Arthur Araujo de Andrade
 * Pricilla Lopes Braga

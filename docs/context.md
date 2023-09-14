@@ -39,3 +39,14 @@ Adicione informações sobre o público-alvo por meio de uma descrição textual
 > - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+
+Famílias e Cuidadores: Este grupo é formado por pais, irmãos, avós, tios, amigos próximos e outros cuidadores que estão diretamente envolvidos no apoio e cuidado de pessoas com TEA e comorbidades. Eles buscam informações e recursos para melhor compreender e atender às necessidades de seus entes queridos. 
+
+Pessoas com TEA: Dependendo de suas habilidades e necessidades, as pessoas com TEA podem usar a aplicação para encontrar serviços e recursos que sejam relevantes para elas. A acessibilidade e a usabilidade são cruciais para este grupo. 
+
+Profissionais de Saúde e Educação: Médicos, terapeutas, psicólogos, professores e outros profissionais que trabalham com indivíduos com TEA e comorbidades podem usar a aplicação como uma ferramenta de referência para encaminhar pacientes ou alunos a serviços apropriados. 
+
+Organizações de Saúde e ONGs: Essas instituições oferecem serviços para pessoas com TEA e comorbidades e podem usar o site para fornecer informações sobre suas instalações, programas e recursos disponíveis. 
+
+Profissionais de Tecnologia e Desenvolvedores: A equipe de desenvolvimento e profissionais de tecnologia envolvidos na manutenção e atualização do site é fundamental para garantir seu funcionamento eficaz. 
+Comunidade em Geral: Amigos, familiares e membros da comunidade interessados em aprender mais sobre o TEA, oferecer apoio ou contribuir com informações locais também são parte do público-alvo.

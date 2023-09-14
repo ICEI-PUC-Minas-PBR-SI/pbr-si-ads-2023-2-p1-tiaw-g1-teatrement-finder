@@ -8,16 +8,9 @@ Com uma visão clara e uma equipe dedicada, este site busca ser uma força posit
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O problema que este site se propõe a resolver reside na complexidade e na falta de centralização das informações relacionadas ao atendimento para Transtorno do Espectro Autista (TEA) e comorbidades. Atualmente, famílias e cuidadores enfrentam uma busca fragmentada e desgastante por serviços de saúde e apoio adequados. As informações sobre clínicas, ONGs e especialistas muitas vezes são dispersas e desatualizadas, tornando difícil a identificação de serviços apropriados. 
+Essa falta de clareza e acessibilidade nas informações impacta diretamente na qualidade do cuidado e na tomada de decisões informadas. Além disso, profissionais de saúde e educação também enfrentam dificuldades ao encaminhar pacientes e alunos para serviços especializados de forma eficaz. 
+Portanto, o problema central é a carência de uma plataforma unificada que simplifique a busca por serviços e forneça informações confiáveis e atualizadas, melhorando a experiência de todos os envolvidos no cuidado de pessoas com TEA e comorbidades. 
 
 ## Objetivos
 

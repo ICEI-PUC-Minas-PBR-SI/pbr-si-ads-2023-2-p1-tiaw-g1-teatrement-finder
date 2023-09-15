@@ -8,10 +8,8 @@
 
 `SEMESTRE: 1º`
 
-O Alcance será uma aplicação que visa auxiliar a dificuldade que as famílias e cuidadores enfrentam ao procurar 
-clínicas e organizações que oferecem atendimento para crianças e adultos com Transtorno do Espectro Autista (TEA) 
-e outras comorbidades. Atualmente, essa busca é uma jornada complexa e desafiadora, devido à falta de 
-informações centralizadas e acessíveis. .
+Bem vindo ao AtypicalConnect:Clinicas e Tratamentos uma aplicação  tem como missão principal atuar como uma ferramenta poderosa para conectar indivíduos e famílias afetadas pelo TEA a clínicas, organizações não governamentais e especialistas. Com uma abordagem focada no usuário, o site foi concebido para oferecer informações claras, precisas e atualizadas sobre os serviços disponíveis em uma variedade de contextos, como clínicas particulares, atendimento por planos de saúde e opções de assistência gratuita. As personas cuidadosamente delineadas, que representam os diversos usuários da plataforma,
+A plataforma não apenas simplifica a busca por serviços, mas também permite que os usuários compartilhem experiências e avaliações, enriquecendo a comunidade com informações valiosas. Profissionais de saúde e educação também encontram neste site uma fonte confiável para encaminhar pacientes e familiares a serviços especializados.
 
 ## Integrantes
 

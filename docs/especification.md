@@ -10,12 +10,13 @@ Maria, Idade: 35 anos
 Descrição: Maria é mãe de um jovem com TEA e comorbidades. Ela está em busca de clínicas que ofereçam terapias específicas para o seu filho. Maria valoriza uma plataforma que forneça informações detalhadas sobre tratamentos e a possibilidade de entrar em contato com outros pais para trocar experiências.
 
 Lucas, Idade: 28 anos 
-
 Descrição: Lucas é um terapeuta que trabalha com crianças e adultos com TEA e comorbidades. Ele está à procura de clínicas especializadas onde possa encaminhar seus pacientes para tratamentos específicos. Lucas valoriza uma plataforma que apresente opções de clínicas e informações sobre suas abordagens terapêuticas. 
 
 Ana, Idade: 22 anos 
-
 Descrição: Ana está estudando psicologia e busca clínicas para seu estágio supervisionado que atendam pessoas com TEA e comorbidades. Ela procura uma plataforma que liste clínicas e ofereça informações sobre as populações atendidas. 
+
+Sofia, Idade: 30 anos 
+Descrição: Sofia é pesquisadora em saúde e está interessada em estudar os tratamentos disponíveis para TEA e comorbidades. Ela busca uma plataforma que reúna informações sobre clínicas que possam ser úteis para sua pesquisa.
 
 ## Histórias de Usuários
 

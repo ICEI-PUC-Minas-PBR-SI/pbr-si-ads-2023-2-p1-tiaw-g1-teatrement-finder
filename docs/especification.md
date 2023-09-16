@@ -8,6 +8,9 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
+Maria, Idade: 35 anos 
+Descrição: Maria é mãe de um jovem com TEA e comorbidades. Ela está em busca de clínicas que ofereçam terapias específicas para o seu filho. Maria valoriza uma plataforma que forneça informações detalhadas sobre tratamentos e a possibilidade de entrar em contato com outros pais para trocar experiências.
+
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:

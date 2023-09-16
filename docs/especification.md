@@ -18,6 +18,10 @@ Descrição: Ana está estudando psicologia e busca clínicas para seu estágio 
 Sofia, Idade: 30 anos 
 Descrição: Sofia é pesquisadora em saúde e está interessada em estudar os tratamentos disponíveis para TEA e comorbidades. Ela busca uma plataforma que reúna informações sobre clínicas que possam ser úteis para sua pesquisa.
 
+Carlos, Idade: 45 anos 
+
+Descrição: Carlos é professor de uma escola inclusiva e está em busca de clínicas que ofereçam suporte para seus alunos com TEA e comorbidades. Ele valoriza uma plataforma que apresente opções de clínicas e recursos educacionais relacionados.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:

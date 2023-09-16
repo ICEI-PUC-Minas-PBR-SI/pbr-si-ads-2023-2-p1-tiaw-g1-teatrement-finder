@@ -14,12 +14,16 @@ Portanto, o problema central é a carência de uma plataforma unificada que simp
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Facilitar a busca por ajuda: Tornar mais simples encontrar clínicas e especialistas para TEA e comorbidades. 
+Ser uma fonte confiável: Fornecer informações precisas sobre serviços e avaliações de usuários. 
+Empoderar famílias e cuidadores: Oferecer informações para decisões informadas. 
+Promover o entendimento: Compartilhar conhecimento acessível sobre TEA e comorbidades. 
+Construir uma comunidade de apoio: Facilitar o compartilhamento de experiências e informações úteis. 
+Simplificar encaminhamentos profissionais: Facilitar o processo de encaminhamento de pacientes e alunos. 
+Melhorar a qualidade de vida: Garantir acesso a serviços de qualidade e apoio. 
+Privacidade e segurança: Proteger dados pessoais com segurança. 
+Acesso inclusivo: Tornar o site acessível a todos. 
+Melhorias contínuas: Evoluir o site com base no feedback e nas necessidades da comunidade.
 
 ## Justificativa
 

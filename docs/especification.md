@@ -1,8 +1,8 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+A aplicação utilizará tecnologias web para criar uma plataforma acessível através de navegadores em dispositivos desktop e móveis. O desenvolvimento envolverá linguagens como HTML, CSS e JavaScript tanto para o front-end quanto para o back-end. Além disso, um banco de dados será utilizado para armazenar informações relacionadas a clínicas, ONGs e avaliações de usuários. Medidas rigorosas de segurança e proteção de dados serão implementadas para assegurar a privacidade dos usuários.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Diante dos fatos mencionados, esta aplicação será parte de um amplo e diversificado ecossistema dedicado ao cuidado e apoio às pessoas com TEA e outros transtornos relacionados. Seu objetivo principal é conectar os diversos envolvidos e simplificar a busca por serviços e informações cruciais.
 
 ## Personas
 

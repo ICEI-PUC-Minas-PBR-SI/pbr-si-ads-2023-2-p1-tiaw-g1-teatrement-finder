@@ -22,7 +22,6 @@ Carlos, Idade: 45 anos.
 Descrição: Carlos é professor de uma escola inclusiva e está em busca de clínicas que ofereçam suporte para seus alunos com TEA e comorbidades. Ele valoriza uma plataforma que apresente opções de clínicas e recursos educacionais relacionados.
 
 Vanessa, Idade: 37 anos.
-
 Descrição: Vanessa é uma mãe solteira dedicada a cuidar de seu filho que possui Transtorno do Espectro Autista (TEA). Ela enfrenta desafios significativos devido à complexidade de cuidar de seu filho sozinha e à falta de informações sobre tratamentos e métodos educacionais adequados para o desenvolvimento dele. Vanessa está em busca de uma plataforma que possa fornecer informações abrangentes sobre os cuidados de seu filho e orientações valiosas para apoiar seu desenvolvimento futuro.
 
 

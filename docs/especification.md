@@ -6,22 +6,23 @@ Diante dos fatos mencionados, esta aplicação será parte de um amplo e diversi
 
 ## Personas
 
-Maria, Idade: 35 anos
+Maria, Idade: 35 anos.
 Descrição: Maria é mãe de um jovem com TEA e comorbidades. Ela está em busca de clínicas que ofereçam terapias específicas para o seu filho. Maria valoriza uma plataforma que forneça informações detalhadas sobre tratamentos e a possibilidade de entrar em contato com outros pais para trocar experiências.
 
-Lucas, Idade: 28 anos 
+Lucas, Idade: 28 anos. 
 Descrição: Lucas é um terapeuta que trabalha com crianças e adultos com TEA e comorbidades. Ele está à procura de clínicas especializadas onde possa encaminhar seus pacientes para tratamentos específicos. Lucas valoriza uma plataforma que apresente opções de clínicas e informações sobre suas abordagens terapêuticas. 
 
-Ana, Idade: 22 anos 
+Ana, Idade: 22 anos. 
 Descrição: Ana está estudando psicologia e busca clínicas para seu estágio supervisionado que atendam pessoas com TEA e comorbidades. Ela procura uma plataforma que liste clínicas e ofereça informações sobre as populações atendidas. 
 
-Sofia, Idade: 30 anos 
+Sofia, Idade: 30 anos. 
 Descrição: Sofia é pesquisadora em saúde e está interessada em estudar os tratamentos disponíveis para TEA e comorbidades. Ela busca uma plataforma que reúna informações sobre clínicas que possam ser úteis para sua pesquisa.
 
-Carlos, Idade: 45 anos 
+Carlos, Idade: 45 anos.
 Descrição: Carlos é professor de uma escola inclusiva e está em busca de clínicas que ofereçam suporte para seus alunos com TEA e comorbidades. Ele valoriza uma plataforma que apresente opções de clínicas e recursos educacionais relacionados.
 
-Vanessa, Idade: 37 anos
+Vanessa, Idade: 37 anos.
+
 Descrição: Vanessa é uma mãe solteira dedicada a cuidar de seu filho que possui Transtorno do Espectro Autista (TEA). Ela enfrenta desafios significativos devido à complexidade de cuidar de seu filho sozinha e à falta de informações sobre tratamentos e métodos educacionais adequados para o desenvolvimento dele. Vanessa está em busca de uma plataforma que possa fornecer informações abrangentes sobre os cuidados de seu filho e orientações valiosas para apoiar seu desenvolvimento futuro.
 
 

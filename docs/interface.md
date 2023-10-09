@@ -8,3 +8,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 ## User Flow
 
 ![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/assets/142631552/582fdd4a-01d4-4179-ad05-beb8dfded955)
+
+## Wireframe
+
+![Exemplo de Wireframe](img/wireframe-example.png)

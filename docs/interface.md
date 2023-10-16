@@ -9,6 +9,11 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/assets/142631552/582fdd4a-01d4-4179-ad05-beb8dfded955)
 
+![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/assets/144744479/0f1a87dd-9578-484a-9584-23de6494633e)
+
+![image](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/assets/144744479/7456f155-8b30-487a-8c4d-af6321288221)
+
+
 ## Wireframe
 
 ![Exemplo de Wireframe](img/wireframe-example.png)

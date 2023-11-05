@@ -3,7 +3,7 @@
 }
 
 .bg-primary-color {
-  background-color: rgb(114, 211, 228);
+  background-color: #6eb8f5;
 }
 
 .bg-secondary-color {
@@ -11,7 +11,7 @@
 }
 
 .bg-dark-color {
-  background-color:  rgb(114, 211, 228);;
+  background-color: #6eb8f5;
 }
 
 .primary-color {
@@ -413,3 +413,4 @@
   text-align: center;
   padding-top: 50px;
 }
+

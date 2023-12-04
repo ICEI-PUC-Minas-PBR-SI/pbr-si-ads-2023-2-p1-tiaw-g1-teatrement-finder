@@ -19,9 +19,11 @@ A plataforma não apenas simplifica a busca por serviços, mas também permite q
 * Rafael Nicolas Araújo Custódio
 * Raphael Silva Costa
 
-## Orientador
+## Orientadores
 
+* Fábio Cordeiro
 * Franciele Cristina Pereiras Rodrigues
+* Shirley Luana Ramos
 
 # Planejamento
 

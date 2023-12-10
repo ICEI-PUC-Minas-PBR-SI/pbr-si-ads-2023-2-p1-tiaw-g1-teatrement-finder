@@ -414,3 +414,10 @@
   padding-top: 50px;
 }
 
+#map {
+  border: 0;
+  height: 250px;
+  position: sticky !important;
+  top: 0;
+  bottom: 0;
+}

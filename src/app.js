@@ -353,3 +353,29 @@ function excluirDestaque(destaqueId, processaDados) {
       console.error('Erro ao excluir destaque via API JSONServer:', error);
     });
 }
+const getListaUsuarios = async ()=> {
+  const urlBase = "https://json-server-vercel-liart.vercel.app/";
+  const headers = { "Content-Type": "application/json",}
+  const url = urlBase + '/usuario';
+  const lst = await  fetch(url, { method: 'GET', headers: headers});
+  return await lst.json();
+}
+
+const getUsuarioLogin = async (email,password)=> {
+  let retorno = false;
+  const users = await getListaUsuarios();
+  if (users != null && users !== undefined && users.length > 0) {
+      users.forEach((user) => {
+          if (user.email == email && user.password == password) {
+              console.log('entrou');
+              retorno = true;
+          }
+    });
+  }
+  return retorno;
+}
+
+
+function block(form){
+  return false;
+}

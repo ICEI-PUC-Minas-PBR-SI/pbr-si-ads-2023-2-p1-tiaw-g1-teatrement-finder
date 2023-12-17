@@ -23,7 +23,8 @@
           "Nota": 8,
           "Comentario": "Quero expressar minha imensa gratidão pela experiência extraordinariamente positiva com [nome da ONG]. Cada interação com a equipe foi marcada pela dedicação, compaixão e eficácia. Suas iniciativas têm um impacto verdadeiramente transformador, e estou encantado por fazer parte desta jornada. O compromisso visível com a transparência e a excelência só solidifica minha admiração por essa ONG. Continuarei apoiando e recomendando entusiasticamente esta organização notável."
         }
-      ]
+      ],
+      "Rating": []
     },
     {
       "ID": 3,
@@ -39,7 +40,8 @@
           "Nota": 5,
           "Comentario": "Minha experiência com esta clínica foi regular. Tenho observado aspectos positivos, como uma rede de profissionais de saúde abrangente, mas também encontrei desafios relacionados ao tempo de espera para agendamento de consultas. A comunicação poderia ser mais clara em algumas situações. No geral, é um serviço que atende às minhas necessidades, mas há espaço para melhorias na eficiência e na transparência."
         }
-      ]
+      ],
+      "Rating": []
     }
   ]
 }

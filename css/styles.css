@@ -7,7 +7,7 @@
 }
 
 .bg-secondary-color {
-  background-color: #535351;
+  background-color: #dfdfdb;
 }
 
 .bg-dark-color {
@@ -271,7 +271,7 @@
 }
 
 #social-icons i:hover {
-  color: #7a7a7a;
+  color: #000000;
 }
 
 /* FOOTER DETAILS */

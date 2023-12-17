@@ -80,18 +80,28 @@
     </nav>
    <!-- Conteúdo Principal -->
 <main class="container mt-5" style="margin-top: 180px !important">
-  <h1>Avaliar Serviço</h1>
-  <form id="formularioAvaliacao">
+    <h2>Avaliar Serviço</h2>
     <div class="mb-3">
-      <label for="servicoId" class="form-label">ID do Serviço:</label>
-      <input type="number" class="form-control" id="servicoId" required>
+      <label for="servico" class="form-label">Selecione o serviço:</label>
+      <select class="form-select" id="servico">
+        <option value="Serviço 1">Serviço 1</option>
+        <option value="Serviço 2">Serviço 2</option>
+        <!-- Adicione mais opções conforme necessário -->
+      </select>
     </div>
     <div class="mb-3">
       <label for="avaliacao" class="form-label">Avaliação:</label>
-      <input type="number" class="form-control" id="avaliacao" min="1" max="5" required>
-      <small class="form-text text-muted">Insira uma avaliação de 1 a 5.</small>
+      <select class="form-select" id="avaliacao">
+        <option value="1">1 - Muito Ruim</option>
+        <option value="2">2 - Ruim</option>
+        <option value="3">3 - Regular</option>
+        <option value="4">4 - Bom</option>
+        <option value="5">5 - Excelente</option>
+      </select>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar Avaliação</button>
+    <button type="button" class="btn btn-primary" onclick="enviarAvaliacao()">Enviar Avaliação</button>
+  </div>
+
   </form>
 </main>
 </body>

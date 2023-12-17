@@ -37,32 +37,39 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-  
     <script src="app.js"></script>
     <script src="Alterarsenha.js"></script>
   </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="template.html">🔙 Voltar para Página Inicial</a>
+    </div>
+  </nav>
   <body onload="init()">
+    <body style="background-color: #6eb8f5;"></body>
     <div class="container col-11 col-md-9" id="form-container">
-        <div class="row align-items-center gx-5">
-          <div class="col-md-6 order-md-2">
-            <h2 style="margin-bottom: 20px;">Alteração de senha</h2>
-            <form>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
-                <label for="email" class="form-label">Nova senha</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
-                <label for="password" class="form-label">Confirmar nova senha</label>
-              </div>
-              <!-- Adicionando o atributo onclick para chamar a função alterarSenha() -->
-              <button type="button" class="btn btn-primary" onclick="alterarSenha()">Alterar Senha</button>
-            </form>
+      <div class="row align-items-center gx-5">
+        <div class="col-md-6 order-md-2">
+          <h2 style="margin-bottom: 20px;">Alteração de senha</h2>
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+              <label for="email" class="form-label">Nova senha</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+              <label for="password" class="form-label">Confirmar nova senha</label>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="alterarSenha()">Alterar Senha</button>
+          </form>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <div class="col-12">
+            <img src="img/Senha.jpg" alt="Hello New Customer" class="img-fluid">
           </div>
-          <div class="col-md-6 order-md-1">
-            <div class="col-8" id="link-container"></div>
-          </div>
+          <div class="col-8" id="link-container"></div>
         </div>
       </div>
-</body>
-</html>
+    </div>
+  </body>
+  </html>

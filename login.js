@@ -1,7 +1,7 @@
 function validarLogin() {
      // Obtém os valores inseridos pelo usuário
-     const email = document.getElementById('Email').value;
-     const senha = document.getElementById('Senha').value;
+     const email = document.getElementById('email').value;
+     const senha = document.getElementById('password').value;
    
      // Obtém os dados do JSON (simulando uma requisição a um servidor)
      const dadosJSON = {
@@ -9,7 +9,7 @@ function validarLogin() {
          {
            "ID": 1,
            "Nome": "Davi Campos Souza",
-           "Email": "Davi@gmail.com",
+           "Email": "davi@gmail.com",
            "Telefone": "31 98965-0406",
            "Endereco": "Rua Jose Albino, 534",
            "Senha": "Senha123"

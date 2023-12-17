@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ongs</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+  
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  
+    <!-- JavaScript mapbox -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="app.js"></script>
+  </head>
+  
+  <body onload="inicializarMapa()">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+    <div class="container py-3">
+      <a class="navbar-brand" href="template.html">
+        <img src="img/AtypicalConnect Cinicas e Tratamentos.png" alt="laço" />
+        <span> </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-items"
+        aria-controls="navbar-items"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.html">Perfil  de usuário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prestador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/atypical_connect/">Comunidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Sair da conta</a>
+          </li>
+          <form class="form-inline my-2 my-lg-0 pl-3-lg">
+            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Início Detalhe do Álbum -->
+  <div class="container" style="margin-top: 180px !important">
+    <!-- Detalhe do Álbum -->
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="img/Ong.png" alt="Projeto 1" class="img-fluid" />
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="danger-color">ONGS</h5>
+              <p class="subtitle secondary-color">
+                Organizações não governamentais sem fins lucrativos
+              </p>
+            </div>
+            <div class="col-3">
+              <h5 class="danger-color"></h5>
+              <p class="subtitle secondary-color">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Lista de Itens -->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <p class="subtitle secondary-color">
+          <h3>Clinicas sem fins lucrativos </h3>
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-3"> 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalProjeto1">
+              <img src="img/A_mais_contagem.png" alt="Projeto 1" class="img-fluid" />
+            </a>
+            <div>
+              <h4>A Mais Contagem</h4>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalProjeto2">
+              <img src="img/Amar_Barreiro.png" alt="Projeto 2" class="img-fluid" />
+            </a>
+            <div>
+              <h4>Amar Barreiro</h4>
+            </div>
+          </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Projeto 1 -->
+          <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalProjeto1Label">Detalhes - A Mais Contagem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Conteúdo do modal aqui -->
+                  <p>Serviços:</p>
+                  <p>Fonoaudiologia • Terapia Ocupacional • Psicologia • Psicopedagogia</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://www.google.com/maps/place/R.+Miguel+de+Souza+Arruda,+50+-+Alvorada,+Contagem+-+MG,+32041-470/@-19.9108992,-44.0783939,21z/data=!4m6!3m5!1s0xa69522406b7453:0x210b09701549e465!8m2!3d-19.9109118!4d-44.0782951!16s%2Fg%2F11cp9807rr?entry=ttu" target="_blank" class="btn btn-primary">Ver no Mapa</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+              <!-- Modal Projeto 2 -->
+              <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalProjeto1Label">Detalhes - A Mais Contagem</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Conteúdo do modal aqui -->
+                      <p>Serviços:</p>
+                      <p>Medicina • Fonoaudiologia • Terapia Ocupacional • Psicologia • Psicopedagogia • Educação Física</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://www.google.com/maps/place/Rua+Alcindo+Gonçalves+Cotta,+355+-+Conj.+Ademar+Maldonado,+Belo+Horizonte+-+MG,+30640-750/@-19.9844936,-44.0276391,18.75z/data=!4m6!3m5!1s0xa6be704ea6ef7f:0x802d86703c925dac!8m2!3d-19.9843066!4d-44.0279115!16s%2Fg%2F11c18spvfg?entry=ttu" target="_blank" class="btn btn-primary">Ver no Mapa</a>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+              <!-- FOOTER -->
+            <!-- INFO -->
+              <!--Maps-->
+              <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59795757699!2d-44.04662274608247!3d-19.90253583914758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1694258462357!5m2!1spt-BR!2sbr" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>
+                  AtypicalConnect: Clinicas e Tratamentos
+                </h2>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite o seu e-mail"
+                    />
+                  </div>
+                  <button class="btn btn-dark">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(48)9999-9999</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Contato por Email</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <p><li><a href="#" class="secondary-color">contato@AtypicalConnect.com</a></li></p>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="secondary-color"></a></li>
+                      <li>
+                        <a href="#" class="secondary-color"></a>
+                      </li>
+                      <li><a href="#" class="secondary-color"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+    
+</html>

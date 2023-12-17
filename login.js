@@ -1,104 +1,73 @@
-// import jwt from 'jsonwebtoken';
-//import { renderHeader} from './customHeader.js';
-let usersArray;
-
-$(document).ready(() => {
-
-     $.ajax({
-          type: 'GET',
-          url: 'https://apiusers--briannicolasdc.repl.co/users',
-          cache: false,
-          success: function (users) {
-               usersArray = users;
-               localStorage.setItem('users', JSON.stringify(users));
-          },
-          error: function (error) {
-               console.error('Error fetching data:', error);
-          }
-     });
-
-     let tokenString = localStorage.getItem("token");
-     let token = JSON.parse(tokenString);
-     if (token) {
-          $("#loginform").hide();
-          $("#loginTitle").hide();
-     }
-
-     document.getElementById("login").addEventListener("submit", (event) => {
-          //event.preventDefault();
-          email = document.getElementById("emailLogin").value;
-          senha = document.getElementById("senhaLogin").value;
-          const userToLogIn = usersArray.find((user) => user.email == email);
-          if (userToLogIn) {
-               if (userToLogIn.senha == senha) {
-                    const token = generateToken(userToLogIn);
-                    localStorage.setItem('token', token);
-                    window.location.reload(true);
-                    console.log(token, userToLogIn.tipoUser);
-                    //remover form login 
-                    if (userToLogIn.tipoUser == "cuidador") {
-                         $("#loginform").hide();
-                         $("#loginTitle").hide();
-                         window.location.href = "historicoReservas.html";
-                    } else if (userToLogIn.tipoUser == "donoAnimal") {
-                         $("#loginform").hide();
-                         $("#loginTitle").hide();
-
-                    }
-                    $(document).trigger('login');
-               } else {
-                    alert(" Senha invalida!");
-               }
-          } else {
-               alert("Email invalido!");
-          }
-
-
-     });
-
-     document.getElementById("reservaForm").addEventListener("submit", (event) => {
-          event.preventDefault();
-          let endereco = document.getElementById("endereco").value;
-          let dataInico = document.getElementById("data-entrada").value;
-          let dataFinal = document.getElementById("data-saida").value;
-          let tokenString = localStorage.getItem("token");
-          let token = JSON.parse(tokenString);
-          const user = usersArray.find(user => user.id == token.userId);
-          const infoReserva = {
-               endereco: endereco,
-               dataEntrada: dataInico,
-               dataSaida: dataFinal,
-               tipoAnimal: token.tipoAnimal,
-               id: user.reservas.length+1
-          }
-          console.log(infoReserva);
-          localStorage.setItem('reserva', JSON.stringify(infoReserva));
-          window.location.href = "listaHosters.html";
-     })
-})
-
-
-function generateToken(user) {
-
-     const tokenData = {
-          userId: user.id,
-          tipoUser: user.tipoUser,
-          tipoAnimal: user.tipoAnimal
-
+function validarLogin() {
+     // Obtém os valores inseridos pelo usuário
+     const email = document.getElementById('Email').value;
+     const senha = document.getElementById('Senha').value;
+   
+     // Obtém os dados do JSON (simulando uma requisição a um servidor)
+     const dadosJSON = {
+       "usuarios_comuns": [
+         {
+           "ID": 1,
+           "Nome": "Davi Campos Souza",
+           "Email": "Davi@gmail.com",
+           "Telefone": "31 98965-0406",
+           "Endereco": "Rua Jose Albino, 534",
+           "Senha": "Senha123"
+         }
+       ],
+       "prestadores": [
+         {
+           "ID": 2,
+           "Nome": "Amar Barreiro",
+           "Email": "amarbarreiro@gmail.com",
+           "Telefone": "31 3333-3333",
+           "Senha": "Amar123",
+           "Tipo": "Ong",
+           "AvaliacaoMedia": null,
+           "Avaliacoes": [
+             {
+               "Nota": 8,
+               "Comentario": "Quero expressar minha imensa gratidão pela experiência extraordinariamente positiva com [nome da ONG]. Cada interação com a equipe foi marcada pela dedicação, compaixão e eficácia. Suas iniciativas têm um impacto verdadeiramente transformador, e estou encantado por fazer parte desta jornada. O compromisso visível com a transparência e a excelência só solidifica minha admiração por essa ONG. Continuarei apoiando e recomendando entusiasticamente esta organização notável."
+             }
+           ],
+           "Rating": []
+         },
+         {
+           "ID": 3,
+           "Nome": "Fisioclin",
+           "Email": "fisioclin@gmail.com",
+           "Telefone": "99 9999-9999",
+           "Endereco": "Avenida João César de Oliveira, 789",
+           "Senha": "123456",
+           "Tipo": "Clinica",
+           "AvaliacaoMedia": null,
+           "Avaliacoes": [
+             {
+               "Nota": 5,
+               "Comentario": "Minha experiência com esta clínica foi regular. Tenho observado aspectos positivos, como uma rede de profissionais de saúde abrangente, mas também encontrei desafios relacionados ao tempo de espera para agendamento de consultas. A comunicação poderia ser mais clara em algumas situações. No geral, é um serviço que atende às minhas necessidades, mas há espaço para melhorias na eficiência e na transparência."
+             }
+           ],
+           "Rating": []
+         }
+       ]
      };
-
-     const token = JSON.stringify(tokenData);
-
-     return token;
-}
-
-// const randomString = () => {
-//      const length = 64;
-//      const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-//      let result = '';
-//      for (let i = 0; i < length; i++) {
-//           const randomIndex = Math.floor(Math.random() * charset.length);
-//           result += charset[randomIndex];
-//      }
-//      return result;
-// };
+   
+     // Verifica se as credenciais existem no JSON
+     const usuarioEncontrado = dadosJSON.usuarios_comuns.find(user => user.Email === email && user.Senha === senha);
+     const prestadorEncontrado = dadosJSON.prestadores.find(user => user.Email === email && user.Senha === senha);
+   
+     if (usuarioEncontrado) {
+       alert('Login bem-sucedido como usuário comum!');
+       // Redireciona para a página de destino do usuário comum
+       window.location.href = 'template.html';
+     } else if (prestadorEncontrado) {
+       alert('Login bem-sucedido como prestador!');
+       // Redireciona para a página de destino do prestador
+       window.location.href = 'template.html';
+     } else {
+       alert('Credenciais inválidas. Verifique seu email e senha.');
+     }
+     // Retorna false para impedir o envio do formulário, já que você está usando o onsubmit
+     return false;
+   }
+   

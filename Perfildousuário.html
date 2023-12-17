@@ -41,7 +41,7 @@
     <script src="app.js"></script>
   </head>
   
-  <body onload="init()">
+  <body onload="init()" style="padding-top: 60px; padding-bottom: 80px;">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
       <div class="container py-3">
@@ -78,6 +78,106 @@
         </div>
       </div>
     </nav>
+    <div class="container col-11 col-md-9 mt-5 mb-5" id="profile-container">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Inserir foto do usuário aqui -->
+            <img src="caminho/para/imagem.jpg" class="img-fluid" alt="Foto do Usuário">
+          </div>
+          <div class="col-md-8">
+            <!-- Dados do Usuário -->
+            <h4 class="card-title" id="nomeUsuario">Nome do Usuário</h4>
+            <p class="card-text" id="emailUsuario">Email do Usuário</p>
+            <p class="card-text" id="telefoneUsuario">Telefone do Usuário</p>
+            <p class="card-text" id="enderecoUsuario">Endereço do Usuário</p>
 
-    </body>
+            <!-- Separador -->
+            <hr class="my-4">
+
+            <!-- Tipo de Usuário -->
+            <p class="card-text" id="tipoUsuario">Tipo de Usuário</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<!-- FOOTER -->
+<footer class="container-fluid bg-dark-color" id="footer">
+  <div class="container">
+    <div class="row">
+      <!-- FOOTER TOP -->
+      <div class="col-12" id="footer-top">
+        <div class="row justify-content-between">
+          <div class="col-4">
+            <h2>
+              AtypicalConnect: Clinicas e Tratamentos
+            </h2>
+          </div>
+          <div class="col-4" id="social-icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <!--PERFIL -->
+
+
+   
+
+      <!-- FOOTER DETAILS -->
+      <div class="col-12" id="footer-details">
+        <div class="row">
+          <div class="col-12 col-md-4" id="news-container">
+            <h4>Fique por dentro das novidades</h4>
+            <p class="secondary-color">
+              Inscreva-se para saber em primeira mão
+            </p>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Digite o seu e-mail"
+                />
+              </div>
+              <button class="btn btn-dark">Inscrever</button>
+            </form>
+          </div>
+          <div class="col-12 col-md-4" id="contact-container">
+            <h4>Formas de contato</h4>
+            <p class="secondary-color">(48)9999-9999</p>
+          </div>
+          <div class="col-12 col-md-4" id="links-container">
+            <div class="row">
+              <h4>Contato por Email</h4>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <p><li><a href="#" class="secondary-color">contato@AtypicalConnect.com</a></li></p>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="secondary-color"></a></li>
+                  <li>
+                    <a href="#" class="secondary-color"></a>
+                  </li>
+                  <li><a href="#" class="secondary-color"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
 </html>

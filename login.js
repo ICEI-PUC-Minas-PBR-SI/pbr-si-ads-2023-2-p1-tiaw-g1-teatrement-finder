@@ -1,75 +1,104 @@
-const getListaUsuarios = async ()=> {
-    const urlBase = "https://json-server-vercel-liart.vercel.app/";
-    const headers = { "Content-Type": "application/json",}
-    const url = urlBase + '/usuario';
-    const lst = await  fetch(url, { method: 'GET', headers: headers});
-    return await lst.json();
-  }
-  
-  const getUsuarioLogin = async (email,password)=> {
-    let retorno = false;
-    const users = await getListaUsuarios();
-    if (users != null && users !== undefined && users.length > 0) {
-        users.forEach((user) => {
-            if (user.email == email && user.password == password) {
-                console.log('entrou');
-                retorno = true;
-            }
-      });
-    }
-    return retorno;
-  }
-  
-  
-  function block(form){
-    return false;
-  }
+// import jwt from 'jsonwebtoken';
+//import { renderHeader} from './customHeader.js';
+let usersArray;
 
-const LoginForm = async () => {
-    console.log('Entrou na função LoginForm');  // Adicionado log
-  
-    let valid = true;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-  
-    console.log('Email:', email);  // Adicionado log
-    console.log('Password:', password);  // Adicionado log
-  
-    if (!email || !password) {
-      alert('Preencha todos os campos obrigatórios.');
-      valid = false;
-    }
-  
-    if (email.toLowerCase() !== 'davi@gmail.com' || password !== '123456') {
-      alert('Usuário ou senha inválidos.');
-      valid = false;
-    }
-  
-    if (valid) {
-      console.log('Realizando login...');  // Adicionado log
-      // Certifique-se de que a função getUsuarioLogin está implementada corretamente
-      const login = await getUsuarioLogin(email, password);
-      if (!login) {
-        alert('Usuário ou senha inválidos.');
-        valid = false;
-      }
-      if (login) {
-        window.location.href = 'template.html';
-      }
-    }
-  
-    console.log('Valid:', valid);  // Adicionado log
-    return valid;
-  };
-  
-  const btn = document.getElementById("btn");
-  btn.addEventListener("click", async () => {
-    console.log('Botão clicado');  // Adicionado log
-    LoginForm();
-  });
-  
-  const myTteste = () => {
-    document.getElementById("email").value = 'davi@gmail.com';
-    document.getElementById("password").value = '123456';
-  };
-  
+$(document).ready(() => {
+
+     $.ajax({
+          type: 'GET',
+          url: 'https://apiusers--briannicolasdc.repl.co/users',
+          cache: false,
+          success: function (users) {
+               usersArray = users;
+               localStorage.setItem('users', JSON.stringify(users));
+          },
+          error: function (error) {
+               console.error('Error fetching data:', error);
+          }
+     });
+
+     let tokenString = localStorage.getItem("token");
+     let token = JSON.parse(tokenString);
+     if (token) {
+          $("#loginform").hide();
+          $("#loginTitle").hide();
+     }
+
+     document.getElementById("login").addEventListener("submit", (event) => {
+          //event.preventDefault();
+          email = document.getElementById("emailLogin").value;
+          senha = document.getElementById("senhaLogin").value;
+          const userToLogIn = usersArray.find((user) => user.email == email);
+          if (userToLogIn) {
+               if (userToLogIn.senha == senha) {
+                    const token = generateToken(userToLogIn);
+                    localStorage.setItem('token', token);
+                    window.location.reload(true);
+                    console.log(token, userToLogIn.tipoUser);
+                    //remover form login 
+                    if (userToLogIn.tipoUser == "cuidador") {
+                         $("#loginform").hide();
+                         $("#loginTitle").hide();
+                         window.location.href = "historicoReservas.html";
+                    } else if (userToLogIn.tipoUser == "donoAnimal") {
+                         $("#loginform").hide();
+                         $("#loginTitle").hide();
+
+                    }
+                    $(document).trigger('login');
+               } else {
+                    alert(" Senha invalida!");
+               }
+          } else {
+               alert("Email invalido!");
+          }
+
+
+     });
+
+     document.getElementById("reservaForm").addEventListener("submit", (event) => {
+          event.preventDefault();
+          let endereco = document.getElementById("endereco").value;
+          let dataInico = document.getElementById("data-entrada").value;
+          let dataFinal = document.getElementById("data-saida").value;
+          let tokenString = localStorage.getItem("token");
+          let token = JSON.parse(tokenString);
+          const user = usersArray.find(user => user.id == token.userId);
+          const infoReserva = {
+               endereco: endereco,
+               dataEntrada: dataInico,
+               dataSaida: dataFinal,
+               tipoAnimal: token.tipoAnimal,
+               id: user.reservas.length+1
+          }
+          console.log(infoReserva);
+          localStorage.setItem('reserva', JSON.stringify(infoReserva));
+          window.location.href = "listaHosters.html";
+     })
+})
+
+
+function generateToken(user) {
+
+     const tokenData = {
+          userId: user.id,
+          tipoUser: user.tipoUser,
+          tipoAnimal: user.tipoAnimal
+
+     };
+
+     const token = JSON.stringify(tokenData);
+
+     return token;
+}
+
+// const randomString = () => {
+//      const length = 64;
+//      const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+//      let result = '';
+//      for (let i = 0; i < length; i++) {
+//           const randomIndex = Math.floor(Math.random() * charset.length);
+//           result += charset[randomIndex];
+//      }
+//      return result;
+// };

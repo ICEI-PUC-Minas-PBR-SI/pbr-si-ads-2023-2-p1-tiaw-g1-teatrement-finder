@@ -353,3 +353,25 @@ function excluirDestaque(destaqueId, processaDados) {
       console.error('Erro ao excluir destaque via API JSONServer:', error);
     });
 }
+
+function enviarAvaliacao() {
+  const servico = document.getElementById('servico').value; // Obtém o nome do serviço selecionado
+  const avaliacao = document.getElementById('avaliacao').value; // Obtém a avaliação selecionada
+
+  // Verifica se o nome do serviço e a avaliação foram selecionados
+  if (servico && avaliacao) {
+    // Aqui você enviaria os dados para o servidor usando fetch API
+    // Substitua este console.log por sua lógica de envio para o servidor
+    console.log(`Serviço: ${servico}, Avaliação: ${avaliacao}`);
+
+    // Limpar campos após o envio (opcional)
+    document.getElementById('servico').selectedIndex = 0;
+    document.getElementById('avaliacao').selectedIndex = 0;
+
+    // Exibe feedback para o usuário
+    alert('Avaliação enviada com sucesso!');
+  } else {
+    // Exibe um alerta se o usuário não selecionou o serviço ou a avaliação
+    alert('Por favor, selecione o serviço e a avaliação!');
+  }
+}

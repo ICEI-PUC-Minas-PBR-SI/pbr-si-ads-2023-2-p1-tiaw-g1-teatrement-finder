@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ongs</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  
     <!-- Google fonts Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-  
     <!-- CSS Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -128,51 +126,74 @@
       <div class="col-12" id="featured-images">
         <div class="row g-4">
           <div class="col-12 col-md-3"> 
-            <a href="https://www.google.com/maps/place/R.+Miguel+de+Souza+Arruda,+50+-+Alvorada,+Contagem+-+MG,+32041-470/@-19.9108992,-44.0783939,21z/data=!4m6!3m5!1s0xa69522406b7453:0x210b09701549e465!8m2!3d-19.9109118!4d-44.0782951!16s%2Fg%2F11cp9807rr?entry=ttu">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalProjeto1">
               <img src="img/A_mais_contagem.png" alt="Projeto 1" class="img-fluid" />
             </a>
             <div>
               <h4>A Mais Contagem</h4>
-              <p class="d-inline-flex gap-1">
-                <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Serviços:
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample1">
-                <div class="card card-body">
-                  Fonoaudiologia • Terapia Ocupacional  • Psicologia • Psicopedagogia •
-                </div>
-              </div>
             </div>
           </div>
-          <div class="col-12 col-md-3">
-            <a href="https://www.google.com/maps/place/Rua+Alcindo+Gonçalves+Cotta,+355+-+Conj.+Ademar+Maldonado,+Belo+Horizonte+-+MG,+30640-750/@-19.9844936,-44.0276391,18.75z/data=!4m6!3m5!1s0xa6be704ea6ef7f:0x802d86703c925dac!8m2!3d-19.9843066!4d-44.0279115!16s%2Fg%2F11c18spvfg?entry=ttu">
+          <div class="col-12 col-sm-3">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalProjeto2">
               <img src="img/Amar_Barreiro.png" alt="Projeto 2" class="img-fluid" />
             </a>
             <div>
               <h4>Amar Barreiro</h4>
-              <p class="d-inline-flex gap-1">
-                <a class="" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Serviços:
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                  Medicina • Fonoaudiologia • Terapia Ocupacional  • Psicologia • Psicopedagogia • Educação Física
+            </div>
+          </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Projeto 1 -->
+          <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalProjeto1Label">Detalhes - A Mais Contagem</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Conteúdo do modal aqui -->
+                  <p>Serviços:</p>
+                  <p>Fonoaudiologia • Terapia Ocupacional • Psicologia • Psicopedagogia</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://www.google.com/maps/place/R.+Miguel+de+Souza+Arruda,+50+-+Alvorada,+Contagem+-+MG,+32041-470/@-19.9108992,-44.0783939,21z/data=!4m6!3m5!1s0xa69522406b7453:0x210b09701549e465!8m2!3d-19.9109118!4d-44.0782951!16s%2Fg%2F11cp9807rr?entry=ttu" target="_blank" class="btn btn-primary">Ver no Mapa</a>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Maps -->
-    <div class="container">
-      <div id="map"></div>
-    </div>
-    
-    <!-- FOOTER -->
+          </div>
+              <!-- Modal Projeto 2 -->
+              <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalProjeto1Label">Detalhes - A Mais Contagem</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Conteúdo do modal aqui -->
+                      <p>Serviços:</p>
+                      <p>Medicina • Fonoaudiologia • Terapia Ocupacional • Psicologia • Psicopedagogia • Educação Física</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://www.google.com/maps/place/Rua+Alcindo+Gonçalves+Cotta,+355+-+Conj.+Ademar+Maldonado,+Belo+Horizonte+-+MG,+30640-750/@-19.9844936,-44.0276391,18.75z/data=!4m6!3m5!1s0xa6be704ea6ef7f:0x802d86703c925dac!8m2!3d-19.9843066!4d-44.0279115!16s%2Fg%2F11c18spvfg?entry=ttu" target="_blank" class="btn btn-primary">Ver no Mapa</a>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+              <!-- FOOTER -->
+            <!-- INFO -->
+              <!--Maps-->
+              <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.59795757699!2d-44.04662274608247!3d-19.90253583914758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1694258462357!5m2!1spt-BR!2sbr" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            <!-- FOOTER -->
     <footer class="container-fluid bg-dark-color" id="footer">
       <div class="container">
         <div class="row">
@@ -212,7 +233,7 @@
                 </form>
               </div>
               <div class="col-12 col-md-4" id="contact-container">
-                <h4>Telefone</h4>
+                <h4>Formas de contato</h4>
                 <p class="secondary-color">(48)9999-9999</p>
               </div>
               <div class="col-12 col-md-4" id="links-container">
@@ -239,7 +260,6 @@
         </div>
       </div>
     </footer>
-
   </body>
-  
-  </html>
+    
+</html>

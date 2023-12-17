@@ -33,7 +33,7 @@
       "Endereco": "Avenida João César de Oliveira, 789",
       "Senha": "123456",
       "Tipo": "Clinica",
-      "AvaliacaoMedia": null,//chamar função de média
+      "AvaliacaoMedia": null,
       "Avaliacoes": [
         {
           "Nota": 5,

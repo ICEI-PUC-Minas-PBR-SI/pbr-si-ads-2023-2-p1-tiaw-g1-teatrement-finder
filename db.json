@@ -1,19 +1,45 @@
 {
-  "posts": [
+  "usuarios_comuns": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "ID": 1,
+      "Nome": "Davi Campos Souza",
+      "Email": "Davi@gmail.com",
+      "Telefone": "31 98965-0406",
+      "Endereco": "Rua Jose Albino, 534",
+      "Senha": "Senha123"
     }
   ],
-  "comments": [
+  "prestadores": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "ID": 2,
+      "Nome": "Amar Barreiro",
+      "Email": "amarbarreiro@gmail.com",
+      "Telefone": "31 3333-3333",
+      "Senha": "Amar123",
+      "Tipo": "Ong",
+      "AvaliacaoMedia": null,
+      "Avaliacoes": [
+        {
+          "Nota": 8,
+          "Comentario": "Quero expressar minha imensa gratidão pela experiência extraordinariamente positiva com [nome da ONG]. Cada interação com a equipe foi marcada pela dedicação, compaixão e eficácia. Suas iniciativas têm um impacto verdadeiramente transformador, e estou encantado por fazer parte desta jornada. O compromisso visível com a transparência e a excelência só solidifica minha admiração por essa ONG. Continuarei apoiando e recomendando entusiasticamente esta organização notável."
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "Nome": "Fisioclin",
+      "Email": "fisioclin@gmail.com",
+      "Telefone": "99 9999-9999",
+      "Endereco": "Avenida João César de Oliveira, 789",
+      "Senha": "123456",
+      "Tipo": "Clinica",
+      "AvaliacaoMedia": null,//chamar função de média
+      "Avaliacoes": [
+        {
+          "Nota": 5,
+          "Comentario": "Minha experiência com esta clínica foi regular. Tenho observado aspectos positivos, como uma rede de profissionais de saúde abrangente, mas também encontrei desafios relacionados ao tempo de espera para agendamento de consultas. A comunicação poderia ser mais clara em algumas situações. No geral, é um serviço que atende às minhas necessidades, mas há espaço para melhorias na eficiência e na transparência."
+        }
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

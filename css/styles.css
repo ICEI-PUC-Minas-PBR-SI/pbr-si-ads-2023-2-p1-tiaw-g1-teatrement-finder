@@ -3,7 +3,7 @@
 }
 
 .bg-primary-color {
-  background-color: #53BDF8;
+  background-color: #6eb8f5;
 }
 
 .bg-secondary-color {
@@ -11,7 +11,7 @@
 }
 
 .bg-dark-color {
-  background-color: #53BDF8;
+  background-color: #6eb8f5;
 }
 
 .primary-color {
@@ -19,12 +19,12 @@
 }
 
 .secondary-color {
-  color: rgb(0, 0, 0);
+  color: #7a7a7a;
 }
 
 /* NAVBAR */
 #navbar {
-  border-bottom: 1px solid #020202;
+  border-bottom: 1px solid #ece8e2;
 }
 
 #navbar a {
@@ -257,7 +257,7 @@
 
 #footer-top,
 #footer-top i {
-  color: #fcfbfb;
+  color: #fff;
 }
 
 #social-icons {
@@ -271,7 +271,7 @@
 }
 
 #social-icons i:hover {
-  color: #020202;
+  color: #7a7a7a;
 }
 
 /* FOOTER DETAILS */
@@ -288,7 +288,7 @@
 }
 
 #footer-details h4 {
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
@@ -326,8 +326,8 @@
 
   #contact-container {
     padding: 0 2em;
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
   }
 
   #links-container {

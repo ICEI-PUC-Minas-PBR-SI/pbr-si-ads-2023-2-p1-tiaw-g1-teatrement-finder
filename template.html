@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Padrão</title>
+  
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+  
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  
+    <script src="app.js"></script>
+  </head>
+  
+  <body onload="init()">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="template.html">
+          <img src="img/AtypicalConnect Cinicas e Tratamentos.png" alt="laço" />
+          <span> </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Usuário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Agendamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Especialidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eventos</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0 pl-3-lg">
+              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- SLIDER -->
+    <div class="container" id="slider-container">
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <!-- substituir para usar createDestaqueElement,remover carousel indicador botoes  -->
+        <div class="carousel-inner" id="carroselIndex">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title primary-color">Planos de Saúde</h5>
+                <p class="card-text secondary-color">
+                  Clinicas e profissionais que atendem o seu plano de saúde.
+                </p>
+                <a href="planos.html" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title primary-color">Ongs</h5>
+                <p class="card-text secondary-color">
+                  Associação sem fins lucrativos para auxiliar crianças adultos.
+                </p>
+                <a href="ongs.html" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card text-center">
+              <div class="card-body primary-color">
+                <h5 class="card-title primary-color">Atendimento Particular</h5>
+                <p class="card-text secondary-color">
+                  Especialidades que somente são atendidas de forma Particular.
+                </p>
+                <a href="particular.html" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- NOVIDADES -->
+    <div class="container">
+      <div class="col-12">
+        <h2 class="title primary-color">FIQUE POR DENTRO </h2>
+        <p class="subtitle secondary-color">
+          DAS NOSSAS NOVIDADES E NOTÍCIAS
+        </p>
+      </div>
+      <!-- substituir por createAlbunsElement -->
+      <div class="col-12" id="regiao-fique">
+        <!-- <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/3.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color"></p>
+              <h3></h3>
+            </div>
+            <p class="subtitle secondary-color">
+              <p>
+                <hr>
+                Grupo de Apoio a Autistas, Pais e Familiares de Contagem realizou o 1° Piquenique no Parque Ecológico Eldorado para celebrar o Dia Mundial do Orgulho Autista, data instituída pelo grupo Aspies for Freedom, dos Estados Unidos, para a celebração da neurodiversidade de pessoas do espectro do autismo, anualmente, todo 18 de junho. Orgulho Autista reconhece o potencial de todas as pessoas.
+              </p>
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/2.jpeg" alt="Projeto 2" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color"></p>
+              <h3></h3>
+            </div>
+            <p class="subtitle secondary-color">
+              <p>
+                <hr>
+                A Prefeitura de Contagem, em parceria com o ItáuPower Shopping, inaugurou, na última quinta-feira (21/9), vagas especiais destinadas às pessoas com Transtorno do Espectro Autista – TEA. A inauguração ocorreu na data em que se celebra o Dia Municipal pela Inclusão Social da Pessoa com Deficiência e o Dia Nacional de Luta das Pessoas com Deficiência, um momento importante para reconhecer, reafirmar e refletir sobre as políticas e ferramentas para a inclusão deste público no município.
+              </p>
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/imagem atualizada.jpg" alt="Projeto 3" class="img-fluid" />
+            <div class="banner-content">
+              <p class="secondary-color"></p>
+              <h3></h3>
+            </div>
+            <p class="subtitle secondary-color">
+              <p>
+                <hr>
+                Grupo de Apoio a Autistas, Pais e Familiares de Contagem – Amais está promovendo no Big Shopping, a exposição fotográfica sobre “Autismo na visão paterna”. A mostra fotográfica conta com o apoio da Secretaria de Direitos Humanos e Cidadania.
+                O projeto é da fotógrafa Thaís Pereira, integrante do Amais. Mãe de uma criança autista de 5 anos, ela reforça, por meio da exposição fotográfica, a conscientização do autismo. “As fotografias apresentadas nesta mostra foram feitas por mim, autista e mãe de autista, em parceria com o Amais, onde temos o protagonismo de outras mulheres - mães, avós e profissionais”, informou.
+              </p>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    
+    <!-- DESTAQUES -->
+    <div class="container">
+      <div class="col-12">
+        <h2 class="title primary-color">Você sabia?</h2>
+        <p class="subtitle secondary-color">
+        </p>
+      </div>
+
+      <div class="col-12" id="regiao-sabia">
+        <!-- <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/d 1.jpg" alt="Projeto 1" class="img-fluid" />
+            <a class="nav-link" href="DetalhesAlbum.html">
+              <div class="banner-content">
+                <p class="secondary-color"></p>
+                <h3></h3>
+              </div>
+            </a>
+            <div>
+              <p>A falta de autonomia pode ser prejudicial para o bem-estar e o desenvolvimento da criança no espectro autista. É muito importante promover atividades que estimulem a comunicação, e isso não só por meio da fala, pois esses estímulos refletem – principalmente – nas atividades da vida diária.</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    
+    <!-- INFO -->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Dados Importantes</h2>
+        <p class="subtitle secondary-color">
+          Saiba mais sobre a TEA
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img src="img/símbolos do autismo.jpg" alt="Informações" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title">Estes dados fazem a diferença:</h2>
+                <p class="subtitle secondary-color">
+                  Segundo uma pesquisa do Centro de Controle de Doenças e Prevenção (CDC) dos Estados Unidos,
+                  existe um aumento na prevalência do Transtorno do Espectro Autista (TEA): uma em cada 44 crianças
+                  aos oito anos de idade é diagnosticada com TEA. O aumento foi de 22% em relação à pesquisa anterior
+                  (elaborada em 2020), cuja proporção era de 1 para 54. Caso esses números sejam similares no Brasil,
+                  ( não há dados oficiais), seriam cerca de 4,84 milhões de pessoas com autismo no nosso país.
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">8 anos</h3>
+                    <p class="secondary-color">Idade das Crianças diagnosticadas</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">35%</h3>
+                    <p class="secondary-color">Taxa de Adultos que recebem diagnóstico tardio</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">4,84</h3>
+                    <p class="secondary-color">milhões de pessoas com autismo no nosso país.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="saibamais.html" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- FOOTER TOP -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>
+                  AtypicalConnect: Clinicas e Tratamentos
+                </h2>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER DETAILS -->
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite o seu e-mail"
+                    />
+                  </div>
+                  <button class="btn btn-dark">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(48)9999-9999</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Contato por Email</h4>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <p><li><a href="#" class="secondary-color">contato@AtypicalConnect.com</a></li></p>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="secondary-color"></a></li>
+                      <li>
+                        <a href="#" class="secondary-color"></a>
+                      </li>
+                      <li><a href="#" class="secondary-color"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+    
+</html>
+  

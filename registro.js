@@ -1,7 +1,4 @@
-const apiUrl =
-  'https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
-let ultimoIdPrestadores = 0;
-let ultimoIdUsuarios = 0;
+const apiUrl =  'https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
 
 function init() {
   getCadastros('prestadores', dados => {
@@ -22,6 +19,7 @@ function cadastrar() {
   let ConfirmaSenha = document.getElementById('confirmaSenha').value;
   let Prestador = document.getElementById('prestador').checked;
   let prestadorOng = document.getElementById('prestadorOng').checked;
+  let prestadorClinica = document.getElementById('prestadorClinica').checked;
 
   if (Senha !== ConfirmaSenha) {
     alert('As senhas não estão iguais!');
@@ -29,11 +27,15 @@ function cadastrar() {
   }
 
   if (Prestador) {
+    if (!prestadorOng.checked && !prestadorClinica.checked) {
+      alert('É necessário marcar uma das opções, Ong ou Clínica!');
+      return;
+    }
     const prestadores = {
-      Id: ultimoIdPrestadores + 1,
       Nome,
       Email,
       Telefone,
+      Endereco,
       Senha,
       Tipo: prestadorOng ? 'Ong' : 'Clinica',
     };
@@ -41,7 +43,6 @@ function cadastrar() {
     inserirCadastro(prestadores, 'prestadores');
   } else {
     const usuarioComum = {
-      Id: ultimoIdUsuarios + 1,
       Nome,
       Email,
       Telefone,
@@ -100,6 +101,7 @@ function inserirCadastro(cadastro, rota) {
   })
     .then(response => response.json())
     .then(data => {
+      limparFormulario();
       alert('Registro inserido com sucesso');
     })
     .catch(error => {
@@ -116,4 +118,14 @@ function getCadastros(rota, processaDados) {
     .catch(error => {
       console.error(`Erro ao ler ${rota} via API JSONServer:`, error);
     });
+}
+
+function limparFormulario() {
+  var prestadorCheckbox = document.getElementById('prestador');
+  prestadorCheckbox.checked = false;
+
+  verificaOpcao('prestador');
+
+  var formulario = document.querySelector('form');
+  formulario.reset();
 }

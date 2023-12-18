@@ -9,10 +9,15 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="css/styles.css">
-  <title>Register</title>
+  <title>Registro</title>
+  <script src="registro.js"></script>
 </head>
-
-<body style="background-color: #6eb8f5;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="template.html">🔙 Voltar para Página Inicial</a>
+  </div>
+</nav>
+<body style="background-color: #6eb8f5;" onload="init()">
   <div class="container col-11 col-md-9" id="form-container">
     <div class="row gx-5">
       <div class="col-md-6">
@@ -20,54 +25,57 @@
         <form>
             <div class="form-floating mb-3">
                 <br>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome completo">
-                <label for="name" class="form-label">Digite seu nome completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <label for="nome" class="form-label">Digite seu nome completo</label>
             </div>
             <div class="form-floating mb-3">    
                 <br>                    
-                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
                 <label for="email" class="form-label">Digite seu email</label>
             </div>
             <div class="form-floating mb-3">
                 <br>                       
-                <input type="number" class="form-control" id="number" name="number" placeholder="Digite seu telefone">
-                <label for="number" class="form-label">Digite seu número de telefone</label>
+                <input type="number" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                <label for="telefone" class="form-label">Digite seu número de telefone</label>
             </div>
             <div class="form-floating mb-3">
                 <br>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu endereço">
-                <label for="number" class="form-label">Digite seu endereço</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+                <label for="endereco" class="form-label">Digite seu endereço</label>
             </div>
             <div class="form-floating mb-3">
                 <br>                        
-                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
-                <label for="password" class="form-label">Digite sua senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+                <label for="senha" class="form-label">Digite sua senha</label>
             </div>
             <div class="form-floating mb-3">
                 <br>                        
-                <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
-                <label for="confirmpassword" class="form-label">Confirme sua senha</label>
+                <input type="password" class="form-control" id="confirmaSenha" name="confirmaSenha" placeholder="Confirme sua senha" required>
+                <label for="confirmaSenha" class="form-label">Confirme sua senha</label>
             </div>
             </form>
           <div class="mb-3">
             <div class="form-check mb-2">
-              <input class="form-check-input" type="checkbox" value="" id="provider">
-              <label class="form-check-label" for="provider">Prestador</label>
+              <input class="form-check-input" type="checkbox" onclick="verificaOpcao('prestador')" value="" id="prestador">
+              <label class="form-check-label" for="prestador">Prestador</label>
             </div>
-            <input type="radio" name="renderOption" value="Prestador" id="PrestadorOng" /> Ong
-            <input type="radio" name="renderOption" value="PrestadorClinica" id="PrestadorClinica" /> Clínica:
+            <div id="radio-options" >
+              <input type="radio" name="renderOption" value="prestadorOng" id="prestadorOng" disabled /> Ong
+              <input type="radio" name="renderOption" value="prestadorClinica" id="prestadorClinica"  disabled/> Clínica:
+            </div>
           </div>
 
           <div class="mb-3">
             <div class="form-check mb-2">
 
-              <input class="form-check-input" type="checkbox" value="" id="commonUser">
-              <label class="form-check-label" for="commonUser">Usuário Comum</label>
+              <input class="form-check-input" type="checkbox" onclick="verificaOpcao('usuarioComum')" 
+                    value="" id="usuarioComum">
+              <label class="form-check-label" for="usuarioComum">Usuário Comum</label>
             </div>
             <br>
             <div class="form-check mb-2">
-              <input class="form-check-input" type="checkbox" value="" id="agree-term">
-              <label class="form-check-label" for="agree-term">
+              <input class="form-check-input" type="checkbox" value="" id="termoServico" required>
+              <label class="form-check-label" for="termoServico">
                 Você aceita os <a href="#">termos de serviço</a>?
               </label>
             </div>
@@ -78,7 +86,9 @@
               </label>
             </div>
           </div>
-          <a class="btn btn-primary" href="template.html" role="button">Cadastrar</a>
+          <button type="submit" class="btn btn-primary" onclick="cadastrar()">Cadastrar</button>
+          <button type="button" class="btn btn-secondary" onclick="limparFormulario()">Limpar Formulário</button>
+
         </form>
       </div>
       <div class="col-md-6">

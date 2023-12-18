@@ -1,4 +1,5 @@
-const apiUrl =  'https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
+const apiUrl =
+  'https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
 
 function init() {
   getCadastros('prestadores', dados => {

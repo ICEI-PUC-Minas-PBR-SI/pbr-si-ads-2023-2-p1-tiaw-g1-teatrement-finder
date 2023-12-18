@@ -31,11 +31,11 @@ function validarLogin() {
   if (usuarioEncontrado) {
     alert('Login bem-sucedido como usuário comum!');
     // Redireciona para a página de destino do usuário comum
-    window.location.href = 'template.html';
+    window.location.href = 'index.html';
   } else if (prestadorEncontrado) {
     alert('Login bem-sucedido como prestador!');
     // Redireciona para a página de destino do prestador
-    window.location.href = 'template.html';
+    window.location.href = 'index.html';
   } else {
     alert('Credenciais inválidas. Verifique seu email e senha.');
   }

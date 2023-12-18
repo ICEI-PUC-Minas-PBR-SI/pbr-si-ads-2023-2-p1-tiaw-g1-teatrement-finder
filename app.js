@@ -1,8 +1,9 @@
-const apiUrl ='https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
+const apiUrl =
+  'https://atypicalconnectclinicas-e-tratamentos.pricillalopes.repl.co';
 
 function init() {
   montarElementosTemplate('regiao-fique');
-  setTimeout(function() {
+  setTimeout(function () {
     montarElementosTemplate('regiao-sabia');
   }, 2000);
   exibeDestaques();
@@ -31,7 +32,7 @@ function montarElementosTemplate(divId) {
   getDados(rota, dados => {
     albuns = dados;
 
-    albuns.forEach((uni) => {
+    albuns.forEach(uni => {
       createAlbunsElement(uni, rowsection);
     });
 
@@ -46,14 +47,13 @@ function montarPagina() {
   getDados('saberMais', dados => {
     albuns = dados;
 
-    albuns.forEach((uni) => {
+    albuns.forEach(uni => {
       createPhotosDetalhes(uni, photosImages);
     });
   });
 }
 
-
-//Método para ser usado no slider do template.html
+//Método para ser usado no slider do index.html
 function exibeDestaques() {
   carrosel = document.getElementById('carroselIndex');
 
@@ -62,7 +62,7 @@ function exibeDestaques() {
   getDestaques(dados => {
     destaques = dados;
 
-    destaques.forEach((uni) => {
+    destaques.forEach(uni => {
       createDestaqueElement(uni, carrosel);
     });
 
@@ -82,25 +82,25 @@ function montaModal(photo) {
 function createAlbunsElement(album, rowsection) {
   const albumContainer = document.createElement('div');
   albumContainer.className = 'col-12 col-md-4';
-  
+
   const img = document.createElement('img');
   img.className = 'img-fluid';
   img.src = album.cover || 'placeholder.jpg';
-  
+
   const title = document.createElement('h4');
   title.className = 'secondary-color';
   title.innerText = album.name;
 
-  const legend = document.createElement('p'); 
-  legend.className = 'd-inline-flex gap-1'
+  const legend = document.createElement('p');
+  legend.className = 'd-inline-flex gap-1';
   legend.innerHTML = `<a class="" data-bs-toggle="collapse" href="#collapse${album.id}" role="button" aria-expanded="false" aria-controls="collapseExample">
   Ver mais:
 </a>`;
 
-const collapse = document.createElement('div'); 
-collapse.className = 'collapse';
-collapse.id = `collapse${album.id}`;
-collapse.innerHTML = `<div class="card card-body">
+  const collapse = document.createElement('div');
+  collapse.className = 'collapse';
+  collapse.id = `collapse${album.id}`;
+  collapse.innerHTML = `<div class="card card-body">
 ${album.description}
 </div>`;
 
@@ -202,22 +202,23 @@ function createPhotosDetalhes(photo, photosImages) {
 
 function inicializarMapa() {
   const centralLatLong = [-43.9397233, -19.9332786];
-  mapboxgl.accessToken = 'pk.eyJ1IjoicHJpY2lsbGFicmFnYSIsImEiOiJjbHBsdzNhZWcwMzY1MnFtc2J5Y291NGZtIn0.jzreIMe1Jf9iLRVBqhaMpw';
+  mapboxgl.accessToken =
+    'pk.eyJ1IjoicHJpY2lsbGFicmFnYSIsImEiOiJjbHBsdzNhZWcwMzY1MnFtc2J5Y291NGZtIn0.jzreIMe1Jf9iLRVBqhaMpw';
 
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v12',
     center: centralLatLong,
-    zoom: 9
+    zoom: 9,
   });
 
   var marcadores = [];
 
   getDados(dados => {
     marcadores = dados;
-    marcadores.forEach((uni) => {
+    marcadores.forEach(uni => {
       let popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML(`<h6>${uni.name}</h6><br>
+        .setHTML(`<h6>${uni.name}</h6><br>
       ${uni.location_name}`);
       const marker = new mapboxgl.Marker({ color: 'green' })
         .setLngLat(uni.location_coordinates)
@@ -225,13 +226,16 @@ function inicializarMapa() {
         .addTo(map);
     });
 
-    navigator.geolocation.getCurrentPosition(processarGeo, () => { alert('Erro ao obter localização.'); });
+    navigator.geolocation.getCurrentPosition(processarGeo, () => {
+      alert('Erro ao obter localização.');
+    });
   });
 }
 
 function processarGeo(local) {
-  let popup = new mapboxgl.Popup({ offset: 25 })
-    .setHTML(`<h3> Estou aqui!!! </h3>`);
+  let popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+    `<h3> Estou aqui!!! </h3>`
+  );
   const marker = new mapboxgl.Marker({ color: 'yellow' })
     .setLngLat([local.coords.longitude, local.coords.latitude])
     .setPopup(popup)
@@ -247,7 +251,7 @@ function alterarDestaque() {
       if (dados) {
         const destaque = {
           albumId: albumId,
-          coverAlbum: dados.cover
+          coverAlbum: dados.cover,
         };
         inserirDestaque(destaque);
       }

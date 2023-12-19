@@ -1,9 +1,11 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+Este projeto de interface compreende a elaboração de um fluxo do usuário por meio de um fluxograma alternativo. Este diagrama visual apresenta uma abordagem detalhada das diversas interações que um usuário pode ter ao utilizar a aplicação web. Os objetos dentro do fluxograma foram estruturados para fornecer informações objetivas e incluem ícones que representam as interações mais significativas.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+O fluxograma alternativo delineia um percurso não linear que os usuários podem seguir, destacando opções e bifurcações ao longo do processo. Isso proporciona uma compreensão clara dos diferentes caminhos disponíveis para os usuários, oferecendo uma visão abrangente das possíveis interações.
+
+Além disso, esse fluxograma está alinhado com os requisitos funcionais da aplicação, garantindo que cada etapa do processo corresponda às funcionalidades essenciais identificadas. Assim, busca-se otimizar a experiência do usuário, fornecendo uma navegação lógica e intuitiva nas telas da aplicação web para os clientes
 
 ## User Flow
 

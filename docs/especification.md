@@ -22,26 +22,29 @@ Carlos, Idade: 45 anos.
 Descrição: Carlos é professor de uma escola inclusiva e está em busca de clínicas que ofereçam suporte para seus alunos com TEA e comorbidades. Ele valoriza uma plataforma que apresente opções de clínicas e recursos educacionais relacionados.
 
 Vanessa, Idade: 37 anos.
-Descrição: Vanessa é uma recente mãe solteira dedicada a cuidar de seu filho que possui Transtorno do Espectro Autista (TEA). Ela enfrenta desafios significativos devido à complexidade de cuidar de seu filho sozinha e à carência de informações sobre tratamentos e métodos educacionais adequados para o desenvolvimento dele. Devido  sua alienação voltado ao Transtorno de seu filho, ela está em busca de uma plataforma que possa fornecer informações abrangentes sobre os cuidados do mesmo e orientações valiosas para apoiar seu desenvolvimento futuro.
+Descrição: Vanessa é uma recente mãe solteira dedicada a cuidar de seu filho que possui Transtorno do Espectro Autista (TEA). Ela enfrenta desafios significativos devido à complexidade de cuidar de seu filho sozinha e à carência de informações sobre tratamentos e métodos educacionais adequados para o desenvolvimento dele. Devido a sua alienação voltado ao Transtorno de seu filho, ela está em busca de uma plataforma que possa fornecer informações abrangentes sobre os cuidados do mesmo e orientações valiosas para apoiar seu desenvolvimento futuro.
 
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Vanessa | Justamente pelo indivíduo ser alienado com a temática do transtorno presente na vida de seu filho, ela possui complicações para cuidar do mesmo e buscar tratamentos/métodos educacionais. Ela busca uma plataforma que possa sanar os problemas e auxilia-la na criação de seu filho. | Conforme o contexto abordado na história do usuário, a plataforma conseguiria disponibilizar informações relativas ao Transtorno de Espectro Autista, disponibilizando conteúdos, estudos, pesquisas que possam mudar, ou melhorar a perspectiva do usuário sobre o modo de criação e abordagem em situações que desenvolveriam seu filho. |
+
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+| Carlos | Carlos é professor de uma escola inclusiva e necessitaria de uma plataforma que forneceria uma vasta opção de clínicas que oferecem  suporte para seus alunos com as devidas comorbidades. | A plataforma atenderia a demanda do usuário por fornecer a opção de cadastro de usuários provedores (Ongs/Clínicas) provenientes a funcionalidades e recursos educacionais que auxiliariam a sanar a adversidade do usuário. | 
+
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+| Sofia | Sofia, uma pesquisadora na área da saúde, está interessada em investigar os tratamentos disponíveis para Transtorno do Espectro Autista (TEA) e suas comorbidades. Ela está em busca de uma plataforma que centralize informações sobre clínicas que possam contribuir para sua pesquisa. | A plataform permite fornecer informações de relevância para incrementar dados, eventos e conteúdos genêricos relativos ao TEA, o que atinigiria o propósito do usuário (Sofia). |
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+
 
 ## Requisitos
 
@@ -51,8 +54,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
 |------|-----------------------------------------|----| ----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA |  |
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA | |
+|RF-001| Permitir que quaisquer indivíduos efetuem seu cadastro na plataforma, tendo a necessidade de categorizar o tipo de conta a ser criada: (usuário comum, usuário prestador). Juntamente, a inclusão de informações pessoais, como: (nome, telefone, endereço)  e credenciais de acesso (e-mail, senha).| ALTA | Paulo Arthur Araújo de Andrade |
+|RF-002| Incremetação de uma ferramenta de exibição que permite que seja mostrado ao usuário as funcionalidades, procedimentos e serviços oferericos pelo prestador. | UJ FDG | Rafael Nicolas Araújo Custódio |
+|RF-003| Disponibilizar um sistema de avaliação para que usuários possam compartilhar feedback sobre clínicas e terapias, contribuindo para a transparência e qualidade das informações. | ALTA | Pricilla Lopes Braga |
+|RF-004| Integração de um sistema de autentificação para que somente usuários cadastrados na plataforma consigam acessa-la com suas credenciais (e-mail e senha).  | ALTA | Paulo Arthur Araújo de Andrade |
+|RF-005| Garantir a acessibilidade da plataforma em dispositivos móveis, atendendo às necessidades de usuários que preferem acessar informações em movimento. | MÉDIA | Pricilla Lopes Braga |
 
 
 ### Requisitos não Funcionais
@@ -80,6 +86,8 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
+![Uploading 18517b33da6ed36b855b.svg…]()
+
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
@@ -87,8 +95,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| Não pode ser desenvolvido um módulo de backend        |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)

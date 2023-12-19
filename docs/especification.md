@@ -86,7 +86,7 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
-![Uploading 18517b33da6ed36b855b.svg…]()
+
 
 
 |ID| Restrição                                             |

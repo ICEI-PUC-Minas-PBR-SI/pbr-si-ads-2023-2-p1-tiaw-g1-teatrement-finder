@@ -10,7 +10,7 @@ https://pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder-ay32-ghuyhj390.vercel.app
 
 `SEMESTRE: 1º`
 
-Bem vindo ao AtypicalConnect: Cinicas e Tratamentos essa aplicação tem como missão principal atuar como uma ferramenta poderosa para conectar indivíduos e famílias afetadas pelo TEA a clínicas, organizações não governamentais e especialistas. Com uma abordagem focada no usuário, o site foi concebido para oferecer informações claras, precisas e atualizadas sobre os serviços disponíveis em uma variedade de contextos, como clínicas particulares, atendimento por planos de saúde e opções de assistência gratuita. As personas cuidadosamente delineadas, que representam os diversos usuários da plataforma,
+Bem vindo ao Atypical Connect: Cinicas e Tratamentos essa aplicação tem como missão principal atuar como uma ferramenta poderosa para conectar indivíduos e famílias afetadas pelo TEA a clínicas, organizações não governamentais e especialistas. Com uma abordagem focada no usuário, o site foi concebido para oferecer informações claras, precisas e atualizadas sobre os serviços disponíveis em uma variedade de contextos, como clínicas particulares, atendimento por planos de saúde e opções de assistência gratuita. As personas cuidadosamente delineadas, que representam os diversos usuários da plataforma,
 A plataforma não apenas simplifica a busca por serviços, mas também permite que os usuários compartilhem experiências e avaliações, enriquecendo a comunidade com informações valiosas. Profissionais de saúde e educação também encontram neste site uma fonte confiável para encaminhar pacientes e familiares a serviços especializados.
 
 ## Integrantes

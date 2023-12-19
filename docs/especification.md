@@ -39,7 +39,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-| Sofia | Sofia, uma pesquisadora na área da saúde, está interessada em investigar os tratamentos disponíveis para Transtorno do Espectro Autista (TEA) e suas comorbidades. Ela está em busca de uma plataforma que centralize informações sobre clínicas que possam contribuir para sua pesquisa. | A plataform permite fornecer informações de relevância para incrementar dados, eventos e conteúdos genêricos relativos ao TEA, o que atinigiria o propósito do usuário (Sofia). |
+| Sofia | Sofia, uma pesquisadora na área da saúde, está interessada em investigar os tratamentos disponíveis para Transtorno do Espectro Autista (TEA) e suas comorbidades. Ela está em busca de uma plataforma que centralize informações sobre clínicas que possam contribuir para sua pesquisa. | A plataforma permite fornecer informações de relevância para incrementar dados, eventos e conteúdos genêricos relativos ao TEA, o que atinigiria o propósito do usuário (Sofia). |
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.

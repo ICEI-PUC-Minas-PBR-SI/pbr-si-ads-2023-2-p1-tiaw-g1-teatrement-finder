@@ -23,9 +23,9 @@ A plataforma não apenas simplifica a busca por serviços, mas também permite q
 
 ## Orientadores
 
-- Fábio Cordeiro
+- Fábio Leandro Rodrigues Cordeiro
 - Franciele Cristina Pereiras Rodrigues
-- Shirley Luana Ramos
+- Shirley Luana Ramos de Assis
 
 # Planejamento
 

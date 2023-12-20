@@ -1,19 +1,10 @@
 # Testes
 
-Neste projeto serão realizados dois tipos de testes:
-
- - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
- - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
-
+Com o objetivo de garantir que o software estivesse em conformidade com os requisitos funcionais e não funcionais definidos para o sistema, realizou-se um processo que envolveu a análise da interação do software com diferentes inputs. Além disso, foram verificados o correto funcionamento de suas funcionalidades e identificados eventuais desvios em relação aos requisitos estabelecidos. Esse procedimento proporcionou uma abordagem mais centrada no usuário, visando assegurar a eficácia e a qualidade do software no contexto do projeto.
 
 # Teste de Software
 
 Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
-
-## Plano de Testes de Software
-
-Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito  Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
-
 
 **Caso de Teste** | **CT01 - Criar conta parte 1**
  :--------------: | ------------
@@ -33,8 +24,6 @@ Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe 
 
 ## Registro dos Testes de Software
 
-Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
-
 |*Caso de Teste*                                 |*TC-01 - Criar uma conta*                                         |
 |---|---|
 |Requisito Associado | RF-004 - Usuários não autenticados podem se cadastrar para criar uma conta e serem autenticados.|
@@ -48,30 +37,21 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
+O software demonstrou estar em grande parte conforme os requisitos funcionais estipulados, evidenciando um alinhamento positivo com as expectativas do projeto.
+Ao adotar essas estratégias, o grupo visa não apenas corrigir as falhas identificadas, mas também aprimorar continuamente a solução, garantindo que ela atenda da melhor forma possível às necessidades e expectativas dos usuários finais. Essa abordagem iterativa contribuirá para o desenvolvimento de um software mais robusto, eficiente e alinhado com os objetivos do projeto.
 
 # Testes de Usabilidade
+Regular:
 
-O objetivo do Plano de Testes de Usabilidade é obter informações quanto à expectativa dos usuários em relação à  funcionalidade da aplicação de forma geral.
+Indica uma experiência mediana, com aspectos positivos e negativos equilibrados. Os usuários conseguiram realizar as tarefas, mas houve áreas que precisam de melhoria para proporcionar uma experiência mais fluida.
 
-Para tanto, elaboramos quatro cenários, cada um baseado na definição apresentada sobre as histórias dos usuários, definido na etapa das especificações do projeto.
+Bom:
 
-Foram convidadas quatro pessoas que os perfis se encaixassem nas definições das histórias apresentadas na documentação, visando averiguar os seguintes indicadores:
+Reflete uma experiência positiva, com boa navegação e usabilidade. Os usuários conseguiram realizar as tarefas de forma eficiente, com poucos ou nenhum obstáculo notável.
 
-Taxa de sucesso: responde se o usuário conseguiu ou não executar a tarefa proposta;
+Ótimo:
 
-Satisfação subjetiva: responde como o usuário avalia o sistema com relação à execução da tarefa proposta, conforme a seguinte escala:
-
-1. Péssimo; 
-2. Ruim; 
-3. Regular; 
-4. Bom; 
-5. Ótimo.
-
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
+Indica a mais alta satisfação subjetiva. Os usuários tiveram uma experiência excepcional, encontrando a navegação e usabilidade do site altamente intuitivas e eficazes na execução das tarefas propostas.
 
 ## Registro de Testes de Usabilidade
 
@@ -79,9 +59,9 @@ Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site u
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
+| 1       | SIM             | 4                    | 27.87 segundos                  |
 | 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 3       | SIM             | 3                    | 39.09 segundos                  |
 |  |  |  |  |
 | **Média**     | 0%           | 0                | 0 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |

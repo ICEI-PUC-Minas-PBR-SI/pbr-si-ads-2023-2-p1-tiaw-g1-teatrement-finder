@@ -5,15 +5,17 @@ Faça uma apresentação de um resumo de todos o processo de desenvolvimento e n
 Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
 
 
-* [Pitch inicial](./sample-pitch.pdf) -- arquivo com os slides da apresentação inicial
-* [Apresentação final](./sample-presentation.pdf) -- arquivo com os slides da apresentação final
-* [Vídeo de demonstração](./sample-video.mp4) -- arquivo com a demonstração do funcionamento do sistema
+* [Pitch inicial]([Pitch_inicial.pdf](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/files/13732129/Pitch_inicial.pdf)
+) -- arquivo com os slides da apresentação inicial
+* [Apresentação final]([Apresentacao_final.pdf](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-ads-2023-2-p1-tiaw-g1-teatrement-finder/files/13732133/Apresentacao_final.pdf)
+) -- arquivo com os slides da apresentação final
+* [Vídeo de demonstração](https://youtu.be/NYEZtSS4FvQ) -- arquivo com a demonstração do funcionamento do sistema
 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
 
 ## Título do Projeto
 
-Nome e marca do projeto
+AtypicalConnect: Clínicas e Tratamentos.
 
 ## Identidade Visual (Marca, Design)
 

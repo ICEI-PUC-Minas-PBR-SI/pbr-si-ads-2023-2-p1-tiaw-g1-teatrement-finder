@@ -14,7 +14,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |ID    | Descrição do Requisito | Prioridade | Artefato Criado |
 |------|------------------------|------------|-----------------|
 |RF-001| Permitir que usuários cadastrem perfis individuais na plataforma, incluindo informações pessoais e contexto específico sobre o TEA. | ALTA | index.html |
-|RF-002|Implementar um mecanismo de busca avançada por clínicas, filtrando por tipos de terapias oferecidas e abordagens terapêuticas. | ALTA | index.html |
+|RF-002|Implementar um mecanismo de busca por clínicas, ONGs e Particular. | ALTA | index.html |
 |RF-003| O sistema deve exibir o cadastro do usuário | ALTA | registro.html |
 |RF-004| Integrar uma funcionalidade de cadastro de ONGs, com informações detalhadas sobre tratamentos oferecidos e abordagens terapêuticas.| ALTA | ong.html |
 |RF-005| Integrar uma funcionalidade de cadastro de planos, com informações detalhadas sobre tratamentos oferecidos e abordagens terapêuticas.| ALTA | planos.html |

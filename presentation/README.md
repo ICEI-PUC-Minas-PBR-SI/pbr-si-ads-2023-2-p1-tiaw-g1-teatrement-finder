@@ -1,6 +1,6 @@
 # Apresentação
 
-A apresentação e o pitch inicial encontra-se dentro da pasta presentation.
+A apresentação e o pitch inicial encontram-se dentro da pasta presentation.
 
 ## Título do Projeto
 
